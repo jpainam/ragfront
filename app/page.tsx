@@ -1,17 +1,15 @@
-import { HomeLayout } from "fumadocs-ui/layouts/home";
-import { baseOptions } from "@/app/layout.config";
-import { cn } from "@/lib/utils";
-import Link from "next/link";
-import Image from "next/image";
-import { buttonVariants } from "@/components/ui/button";
-import GradientBlur from "@/components/GradientBlur";
-import { ArrowRight, Github } from "lucide-react";
-import { SparklesText } from "@/components/ui/sparkles-text";
-import FeaturesSection from "@/components/Features";
-import Testimonials from "@/components/testimonials-marquee";
 import Faq2 from "@/components/faq-2";
+import FeaturesSection from "@/components/Features";
 import Footer4Col from "@/components/footer";
+import GradientBlur from "@/components/GradientBlur";
 import { NavbarDemo } from "@/components/navbar";
+import Testimonials from "@/components/testimonials-marquee";
+import { buttonVariants } from "@/components/ui/button";
+import { SparklesText } from "@/components/ui/sparkles-text";
+import { cn } from "@/lib/utils";
+import { ArrowRight, Github } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -62,16 +60,16 @@ export default function Home() {
               }}
             />
             <h1 className="mb-4 flex flex-wrap gap-2 text-3xl md:text-5xl font-medium leading-tight">
-              Master{" "}
+              Supercharge{" "}
               <SparklesText
                 colors={{
                   first: "#ed5ade",
                   second: "#5aedda",
                 }}
               >
-                Network Programming
+                Your Internal docs
               </SparklesText>{" "}
-              with Confidence
+              with AI
             </h1>
             <p className="mb-8 text-left text-muted-foreground md:max-w-[80%] md:text-xl">
               Your comprehensive platform for learning socket programming,
