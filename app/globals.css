@@ -2,10 +2,6 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
-@import "fumadocs-ui/css/neutral.css";
-@import "fumadocs-ui/css/preset.css";
-
-@source '../node_modules/fumadocs-ui/dist/**/*.js';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -118,7 +114,6 @@
   --sidebar-ring: oklch(0.527 0.154 150.069);
 }
 
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -150,7 +145,6 @@ pre code {
     animation-delay: 4s;
   }
 }
-
 
 /* animation: {
         marquee: "marquee var(--duration) linear infinite",

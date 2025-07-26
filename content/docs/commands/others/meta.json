@@ -1,5 +1,0 @@
-{
-  "title": "Other Tools",
-  "icon": "Wrench",
-  "pages": ["arp", "tcpflow", "ssmtp-sendmail"]
-}

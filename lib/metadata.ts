@@ -1,7 +1,5 @@
-import type { Metadata } from "next/types";
 import { siteConfig } from "@/config/site";
-import { createMetadataImage } from "fumadocs-core/server";
-import { source } from "@/lib/source";
+import type { Metadata } from "next/types";
 
 export function createMetadata(override: Metadata): Metadata {
   const titleStr = override.title
@@ -66,8 +64,3 @@ export const baseUrl =
   process.env.NODE_ENV === "development" || !process.env.VERCEL_URL
     ? new URL("http://localhost:3000")
     : new URL(`https://${process.env.VERCEL_URL}`);
-
-export const metadataImage = createMetadataImage({
-  imageRoute: "/api/dynamic-og",
-  source,
-});
