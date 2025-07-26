@@ -330,4 +330,4 @@ export const testimonials = [
       </p>
     ),
   },
-];
+].slice(0, 9); // Limit to 30 testimonials for performance
