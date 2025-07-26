@@ -1,5 +1,0 @@
-{
-  "title": "Network Statistics",
-  "icon": "ChartNoAxesColumnIncreasing",
-  "pages": ["netstat", "ss", "tcpdump", "iftop", "nload"]
-}

@@ -1,5 +1,0 @@
-{
-  "title": "DNS and Name Resolution",
-  "icon": "Search",
-  "pages": ["nslookup", "dig", "host"]
-}

@@ -201,7 +201,7 @@ export default function Home() {
                       clipRule="evenodd"
                     ></path>
                   </svg>
-                  <span className="font-medium">Practical Examples</span>
+                  <span className="font-medium">Internal Ai Assistant</span>
                 </div>
               </div>
             </div>
