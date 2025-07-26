@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
+import { cn } from "@/lib/utils";
+import { AnimatePresence, motion } from "framer-motion";
 import { MinusIcon, PlusIcon } from "lucide-react";
+import { useState } from "react";
 
 interface FaqItem {
   id: string;
@@ -16,63 +16,101 @@ interface FaqItem {
 const faqItems: FaqItem[] = [
   {
     id: "1",
-    question: "What is CNdocs?",
-    answer: "CNdocs is a comprehensive documentation platform for computer networking and socket programming. It provides clear explanations, practical examples, and code samples to help students and professionals master networking concepts and implementation.",
+    question: "What is this platform for?",
+    answer:
+      "It transforms your internal documents into an intelligent assistant that answers natural language questions with sourced responses.",
     category: "general",
   },
   {
     id: "2",
-    question: "Is CNdocs free to use?",
-    answer: "Yes, CNdocs is completely free and open-source. You can use all our documentation, examples, and code samples for personal, educational, and commercial projects without any restrictions.",
+    question: "Who should use it?",
+    answer:
+      "Anyone who manages internal knowledge — HR teams, legal firms, educators, startup founders, ops teams, product managers, or solo professionals.",
     category: "general",
   },
   {
     id: "3",
-    question: "Do I need prior networking knowledge to use CNdocs?",
-    answer: "No, CNdocs is designed for learners at all levels. We start with fundamental concepts and progressively move to more advanced topics, making it accessible for beginners while still providing valuable resources for experienced professionals.",
+    question: "Is it difficult to use?",
+    answer:
+      "Not at all. You simply upload your documents and click “Build”. You can begin querying immediately, no technical setup needed.",
     category: "general",
   },
   {
     id: "4",
-    question: "How can I run the code examples provided in CNdocs?",
-    answer: "All code examples can be run on standard Unix/Linux systems or Windows with appropriate development tools installed. Each example includes compilation and execution instructions. For socket programming examples, you'll need a C compiler like gcc or clang.",
+    question: "What file types are supported?",
+    answer:
+      "PDF, DOCX, TXT, HTML, Markdown — with more coming soon (like Google Docs and Notion export).",
     category: "technical",
   },
   {
     id: "5",
-    question: "Does CNdocs cover both theoretical concepts and practical implementation?",
-    answer: "Absolutely! CNdocs bridges the gap between theory and practice. We explain networking concepts thoroughly and then demonstrate their implementation with real-world code examples and projects.",
+    question: "What models can I choose from?",
+    answer:
+      "You can choose from a curated set of high-quality open models or bring your own via API key. Fine-tuned models for your industry will be offered soon.",
     category: "technical",
   },
   {
     id: "6",
-    question: "Does CNdocs support both light and dark modes?",
-    answer: "Yes, CNdocs is designed to work seamlessly with both light and dark modes. The documentation automatically adapts to your preferred theme settings for comfortable reading in any environment.",
+    question: "Is the data updated automatically?",
+    answer:
+      "Yes, you can re-index or auto-sync your RAG model when documents change.",
     category: "technical",
   },
   {
     id: "7",
-    question: "How often is new content added to CNdocs?",
-    answer: "We regularly update and expand our documentation with new topics, examples, and projects. Our goal is to provide the most comprehensive and up-to-date resource for networking and socket programming.",
-    category: "general",
+    question: "How does the system retrieve the top-k content?",
+    answer:
+      "It uses vector search over your uploaded content, finds the most relevant sections, and appends them to your prompt before querying the model.",
+    category: "technical",
   },
   {
     id: "8",
-    question: "How can I contribute to CNdocs?",
-    answer: "We welcome contributions! You can contribute by improving existing documentation, adding new examples, fixing errors, or suggesting new topics. Check our GitHub repository for contribution guidelines.",
-    category: "support",
+    question: "Is there a free version?",
+    answer:
+      "Yes — the Starter plan is free and great for solo users or hobby projects.",
+    category: "pricing",
   },
   {
     id: "9",
-    question: "Does CNdocs cover network security topics?",
-    answer: "Yes, CNdocs includes sections on network security principles, secure socket programming, encryption techniques, and best practices for building secure networked applications.",
-    category: "technical",
+    question: "How does billing work?",
+    answer:
+      "Paid plans are monthly or annual. You can upgrade anytime and your usage resets each billing cycle.",
+    category: "pricing",
   },
   {
     id: "10",
-    question: "Are there complete projects I can study and modify?",
-    answer: "Yes, CNdocs includes several complete networking projects with full source code, including message queues, client-server applications, and inter-process communication examples that you can study, modify, and use in your own work.",
-    category: "technical",
+    question: "Are there usage caps?",
+    answer:
+      "Each plan includes a cap on documents and queries. Enterprise plans are customizable.",
+    category: "pricing",
+  },
+  {
+    id: "11",
+    question: "Can I cancel anytime?",
+    answer:
+      "Yes. All plans are pay-as-you-go and cancellable anytime from your dashboard.",
+    category: "pricing",
+  },
+  {
+    id: "12",
+    question: "What kind of support do you offer?",
+    answer:
+      "Free users get access to community support. Pro and Enterprise users get email and live chat. Enterprise clients can request onboarding and custom training.",
+    category: "support",
+  },
+  {
+    id: "13",
+    question: "Do you have documentation or training?",
+    answer:
+      "Yes — we offer setup guides, tutorials, and demo videos. Enterprise clients also receive hands-on onboarding.",
+    category: "support",
+  },
+  {
+    id: "14",
+    question: "What happens if I run into bugs?",
+    answer:
+      "We have a dedicated team handling technical issues and we prioritize uptime and responsiveness for Pro and Enterprise users.",
+    category: "support",
   },
 ];
 
@@ -88,9 +126,10 @@ export default function Faq2() {
   const [activeCategory, setActiveCategory] = useState<string>("all");
   const [expandedId, setExpandedId] = useState<string | null>(null);
 
-  const filteredFaqs = activeCategory === "all"
-    ? faqItems
-    : faqItems.filter(item => item.category === activeCategory);
+  const filteredFaqs =
+    activeCategory === "all"
+      ? faqItems
+      : faqItems.filter((item) => item.category === activeCategory);
 
   const toggleExpand = (id: string) => {
     setExpandedId(expandedId === id ? null : id);
@@ -112,7 +151,8 @@ export default function Faq2() {
           </h2>
 
           <p className="text-muted-foreground text-center max-w-2xl">
-            Find answers to common questions about CNdocs and how to use our documentation to master networking concepts and socket programming.
+            Find answers to common questions about CNdocs and how to use our
+            documentation to master networking concepts and socket programming.
           </p>
         </div>
 
@@ -148,13 +188,15 @@ export default function Faq2() {
                   "border border-border rounded-xl overflow-hidden h-fit",
                   expandedId === faq.id ? "bg-card/50 shadow-3xl" : "bg-card/50"
                 )}
-                style={{ minHeight: '88px' }}
+                style={{ minHeight: "88px" }}
               >
                 <button
                   onClick={() => toggleExpand(faq.id)}
                   className="w-full flex items-center justify-between p-6 text-left"
                 >
-                  <h3 className="text-lg font-medium text-foreground">{faq.question}</h3>
+                  <h3 className="text-lg font-medium text-foreground">
+                    {faq.question}
+                  </h3>
                   <div className="ml-4 flex-shrink-0">
                     {expandedId === faq.id ? (
                       <MinusIcon className="h-5 w-5 text-primary" />

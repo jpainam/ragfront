@@ -31,8 +31,8 @@ export function NavbarDemo() {
       link: "#pricing",
     },
     {
-      name: "About",
-      link: "/about",
+      name: "Contact",
+      link: "/contact",
     },
   ];
 
