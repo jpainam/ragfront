@@ -4,7 +4,7 @@ export default function robots() {
       userAgent: "*",
       allow: "/",
     },
-    host: "https://cndocs.vercel.app",
-    sitemap: "https://cndocs.vercel.app/sitemap.xml",
+    host: "https://ragfront-three.vercel.app",
+    sitemap: "https://ragfront-three.vercel.app/sitemap.xml",
   };
 }

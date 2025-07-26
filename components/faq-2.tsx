@@ -237,10 +237,10 @@ export default function Faq2() {
             Can&apos;t find what you&apos;re looking for?
           </p>
           <a
-            href="#"
+            href="/contact"
             className="inline-flex items-center justify-center px-6 py-3 border-2 border-primary rounded-lg font-medium text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
           >
-            Contact Support
+            Contact Us
           </a>
         </motion.div>
       </div>

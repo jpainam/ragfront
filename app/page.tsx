@@ -161,7 +161,7 @@ export default function Home() {
                 Getting Started <ArrowRight className="size-4" />
               </Link>
               <a
-                href="https://github.com/subhadeeproy3902/cndocs"
+                href="https://github.com/jpainam/ragfront"
                 target="_blank"
                 rel="noreferrer noopener"
                 className={cn(

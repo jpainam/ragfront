@@ -28,7 +28,7 @@ export function NavbarDemo() {
     },
     {
       name: "Pricing",
-      link: "#pricing",
+      link: "/#pricing",
     },
     {
       name: "Contact",
@@ -82,9 +82,7 @@ export function NavbarDemo() {
             <NavbarButton
               variant="gradient"
               className="w-full"
-              onClick={() =>
-                redirect("https://github.com/subhadeeproy3902/cndocs")
-              }
+              onClick={() => redirect("https://github.com/jpainam/ragfront")}
             >
               Github
             </NavbarButton>

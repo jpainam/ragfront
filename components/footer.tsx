@@ -186,11 +186,13 @@ export default function Footer4Col() {
         <div className="mt-8 border-t pt-6">
           <div className="flex justify-between text-left">
             <p className="text-sm text-secondary-foreground/70 w-fit">
-              <span className="block sm:inline w-fit">All rights reserved.</span>
+              <span className="block sm:inline w-fit">
+                All rights reserved.
+              </span>
             </p>
 
             <p className="text-secondary-foreground/70 text-sm transition sm:order-first sm:mt-0">
-              &copy; {new Date().getFullYear()} CNdocs
+              &copy; {new Date().getFullYear()} Docentra Ai
             </p>
           </div>
         </div>

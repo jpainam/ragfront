@@ -82,7 +82,7 @@ export default function Testimonials() {
             students
           </span>{" "}
           are saying about{" "}
-          <span className="font-semibold text-primary">Cndocs</span>
+          <span className="font-semibold text-primary">Docentra Ai</span>
         </h3> */}
       </motion.div>
 

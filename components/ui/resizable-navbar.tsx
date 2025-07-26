@@ -2,12 +2,13 @@
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import {
-  motion,
   AnimatePresence,
-  useScroll,
+  motion,
   useMotionValueEvent,
+  useScroll,
 } from "motion/react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React, { useRef, useState } from "react";
 
 interface NavbarProps {
@@ -71,16 +72,16 @@ export const Navbar = ({ children, className }: NavbarProps) => {
       className={cn(
         "fixed inset-x-0 top-2 z-50 w-full",
         className,
-        visible && "top-0",
+        visible && "top-0"
       )}
     >
       {React.Children.map(children, (child) =>
         React.isValidElement(child)
           ? React.cloneElement(
               child as React.ReactElement<{ visible?: boolean }>,
-              { visible },
+              { visible }
             )
-          : child,
+          : child
       )}
     </motion.div>
   );
@@ -108,7 +109,7 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
       className={cn(
         "relative z-[60] mx-auto hidden w-full max-w-5xl flex-row items-center justify-between self-start rounded-full bg-white/80 px-4 py-2 dark:bg-background/40 md:flex",
         visible && "bg-white/80 dark:bg-background/40",
-        className,
+        className
       )}
     >
       {children}
@@ -118,20 +119,27 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
 
 export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
   const [hovered, setHovered] = useState<number | null>(null);
+  const patname = usePathname();
+  const isActive = (link: string) => patname === link;
 
   return (
     <motion.div
       onMouseLeave={() => setHovered(null)}
       className={cn(
         "absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium text-zinc-600 transition duration-200 hover:text-zinc-800 md:flex md:space-x-2",
-        className,
+        className
       )}
     >
       {items.map((item, idx) => (
         <Link
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className="relative px-4 py-2 text-neutral-600 dark:text-neutral-300"
+          className={cn(
+            "relative px-4 py-2 text-neutral-600 dark:text-neutral-300",
+            isActive(item.link)
+              ? " bg-gray-100 dark:bg-neutral-900 rounded-2xl"
+              : ""
+          )}
           key={`link-${idx}`}
           href={item.link}
         >
@@ -170,7 +178,7 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
       className={cn(
         "relative z-50 mx-auto flex w-full max-w-[calc(100vw-2rem)] flex-col items-center justify-between bg-background px-0 py-2 md:hidden",
         visible && "bg-white/80 dark:bg-neutral-950/80",
-        className,
+        className
       )}
     >
       {children}
@@ -186,7 +194,7 @@ export const MobileNavHeader = ({
     <div
       className={cn(
         "flex w-full flex-row items-center justify-between px-4",
-        className,
+        className
       )}
     >
       {children}
@@ -209,7 +217,7 @@ export const MobileNavMenu = ({
           exit={{ opacity: 0 }}
           className={cn(
             "absolute inset-x-0 top-16 z-50 flex w-full flex-col items-start justify-start gap-4 rounded-lg bg-white px-4 py-8 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] dark:bg-neutral-950",
-            className,
+            className
           )}
         >
           {children}
@@ -238,7 +246,7 @@ export const NavbarLogo = () => {
     <Link href="/" className="z-50 flex items-center justify-center gap-2">
       <img src="/logo.webp" alt="logo" className="h-8 w-8 rounded-full" />
       <span className="bg-primary from-foreground via-emerald-200 to-primary bg-clip-text text-2xl font-semibold text-transparent dark:bg-gradient-to-b md:text-xl">
-        Cndocs
+        Docentra Ai
       </span>
     </Link>
   );
@@ -279,7 +287,7 @@ export const NavbarButton = ({
     {
       href: href || undefined,
       className: cn(baseStyles, variantStyles[variant], className),
-      ...props
+      ...props,
     },
     children
   );

@@ -32,17 +32,17 @@ export const metadata: Metadata = {
   ],
   metadataBase: new URL("https://cn.mvp-subha.me"),
   openGraph: {
-    title: "Cndocs",
+    title: "Docentra Ai",
     description:
       "A beautiful documentation site for computer networking and socket programming with clear explanations and practical examples.",
     url: "https://cn.mvp-subha.me",
-    siteName: "Cndocs",
+    siteName: "Docentra Ai",
     images: [
       {
         url: "https://i.postimg.cc/rw0PX56X/Screenshot-2025-05-19-000837.png",
         width: 1200,
         height: 630,
-        alt: "Cndocs",
+        alt: "Docentra",
       },
     ],
     locale: "en_US",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cndocs",
+    title: "Docentra Ai",
     description:
       "A beautiful documentation site for computer networking and socket programming with clear explanations and practical examples.",
     creator: "@mvp_Subha",
