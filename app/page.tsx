@@ -7,7 +7,7 @@ import Testimonials from "@/components/testimonials-marquee";
 import { buttonVariants } from "@/components/ui/button";
 import { SparklesText } from "@/components/ui/sparkles-text";
 import { cn } from "@/lib/utils";
-import { ArrowRight, Github } from "lucide-react";
+import { ArrowRight, LogInIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -172,7 +172,7 @@ export default function Home() {
                   })
                 )}
               >
-                Sign Up <Github className="size-4" />
+                Sign Up <LogInIcon className="size-4" />
               </a>
             </div>
 
