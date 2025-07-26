@@ -71,11 +71,10 @@ export default function Home() {
               </SparklesText>{" "}
               with AI
             </h1>
-            <p className="mb-8 text-left text-muted-foreground md:max-w-[80%] md:text-xl">
-              Your comprehensive platform for learning socket programming,
-              protocols, and network architecture. From TCP/IP fundamentals to
-              advanced client-server implementations with detailed examples and
-              visualizations.
+            <p className="mb-8 text-center text-muted-foreground md:max-w-[80%] md:text-xl">
+              Turn your files into an AI-powered assistant with answers sourced
+              directly from your internal documentation, policies, and knowledge
+              base. From static documents to actionable knowledge.
             </p>
             <div className="flex flex-wrap gap-4 mb-6 md:flex-row">
               <div className="flex items-center gap-2">
@@ -93,7 +92,7 @@ export default function Home() {
                     d="M5 13l4 4L19 7"
                   ></path>
                 </svg>
-                <span>Socket Programming</span>
+                <span>Internal Knowledge</span>
               </div>
               <div className="flex items-center gap-2">
                 <svg
@@ -110,7 +109,7 @@ export default function Home() {
                     d="M5 13l4 4L19 7"
                   ></path>
                 </svg>
-                <span>TCP/IP Model</span>
+                <span>AI Assistant</span>
               </div>
               <div className="flex items-center gap-2">
                 <svg
@@ -127,7 +126,7 @@ export default function Home() {
                     d="M5 13l4 4L19 7"
                   ></path>
                 </svg>
-                <span>Client-Server Architecture</span>
+                <span>Enterprise Productivity</span>
               </div>
               <div className="flex items-center gap-2">
                 <svg
@@ -144,7 +143,7 @@ export default function Home() {
                     d="M5 13l4 4L19 7"
                   ></path>
                 </svg>
-                <span>Advanced Codes</span>
+                <span>Document Intelligence</span>
               </div>
             </div>
 
@@ -173,7 +172,7 @@ export default function Home() {
                   })
                 )}
               >
-                Github <Github className="size-4" />
+                Sign Up <Github className="size-4" />
               </a>
             </div>
 

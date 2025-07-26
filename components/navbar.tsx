@@ -1,38 +1,38 @@
 "use client";
 
 import {
+  MobileNav,
+  MobileNavHeader,
+  MobileNavMenu,
+  MobileNavToggle,
   Navbar,
+  NavbarButton,
+  NavbarLogo,
   NavBody,
   NavItems,
-  MobileNav,
-  NavbarLogo,
-  NavbarButton,
-  MobileNavHeader,
-  MobileNavToggle,
-  MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
-import { useState } from "react";
-import { ModeToggle } from "./ui/mode-toggle";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { useState } from "react";
+import { ModeToggle } from "./ui/mode-toggle";
 
 export function NavbarDemo() {
   const navItems = [
     {
-      name: "Docs",
-      link: "/docs/fundamentals",
+      name: "Services",
+      link: "/services",
     },
     {
       name: "Features",
       link: "/#features",
     },
     {
-      name: "Reviews",
-      link: "#reviews",
+      name: "Pricing",
+      link: "#pricing",
     },
     {
-      name: "FAQs",
-      link: "#faq",
+      name: "About",
+      link: "/about",
     },
   ];
 
@@ -45,9 +45,7 @@ export function NavbarDemo() {
         <NavItems items={navItems} />
         <div className="flex items-center gap-4">
           <NavbarButton variant="gradient">
-            <Link href="https://github.com/subhadeeproy3902/cndocs">
-              Github
-            </Link>
+            <Link href="https://dashboard.ragfront.ai/signin">Sign In</Link>
           </NavbarButton>
           <ModeToggle />
         </div>
@@ -84,7 +82,9 @@ export function NavbarDemo() {
             <NavbarButton
               variant="gradient"
               className="w-full"
-              onClick={() => redirect("https://github.com/subhadeeproy3902/cndocs")}
+              onClick={() =>
+                redirect("https://github.com/subhadeeproy3902/cndocs")
+              }
             >
               Github
             </NavbarButton>
