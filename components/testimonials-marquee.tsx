@@ -98,7 +98,7 @@ export default function Testimonials() {
                   "[--duration:60s]": i === 1,
                   "[--duration:30s]": i === 2,
                   "[--duration:70s]": i === 3,
-                  "[--duration:50s]": i === 4,
+                  //"[--duration:50s]": i === 4,
                 })}
               >
                 {testimonials.slice(i * 3, (i + 1) * 3).map((card, idx) => (
