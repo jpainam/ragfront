@@ -1,10 +1,10 @@
 "use client";
 
+import { Marquee } from "@/components/ui/marquee";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 import Image from "next/image";
-import { Marquee } from "@/components/ui/marquee";
 
 export interface TestimonialCardProps {
   name: string;
@@ -31,7 +31,7 @@ export function TestimonialCard({
         "border border-border bg-card/50 shadow-sm",
         // hover effect
         "transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md",
-        className,
+        className
       )}
       {...props}
     >
@@ -70,7 +70,10 @@ const testimonials = [
     img: "https://randomuser.me/api/portraits/men/22.jpg",
     description: (
       <p>
-        CNdocs has transformed how I teach networking concepts to my students. The clear explanations and practical examples make complex topics accessible. My students consistently praise the socket programming guides.
+        CNdocs has transformed how I teach networking concepts to my students.
+        The clear explanations and practical examples make complex topics
+        accessible. My students consistently praise the socket programming
+        guides.
       </p>
     ),
   },
@@ -80,7 +83,10 @@ const testimonials = [
     img: "https://randomuser.me/api/portraits/women/33.jpg",
     description: (
       <p>
-        As a professional network engineer, I&apos;m impressed by CNdocs&apos; comprehensive coverage of both theoretical concepts and practical implementations. The TCP/IP model explanations are the clearest I&apos;ve seen anywhere.
+        As a professional network engineer, I&apos;m impressed by CNdocs&apos;
+        comprehensive coverage of both theoretical concepts and practical
+        implementations. The TCP/IP model explanations are the clearest
+        I&apos;ve seen anywhere.
       </p>
     ),
   },
@@ -90,7 +96,9 @@ const testimonials = [
     img: "https://randomuser.me/api/portraits/men/32.jpg",
     description: (
       <p>
-        CNdocs helped me ace my networking course! The interactive visualizations made it easy to understand complex protocols, and the C code examples were invaluable for my lab assignments.
+        CNdocs helped me ace my networking course! The interactive
+        visualizations made it easy to understand complex protocols, and the C
+        code examples were invaluable for my lab assignments.
       </p>
     ),
   },
@@ -100,7 +108,9 @@ const testimonials = [
     img: "https://randomuser.me/api/portraits/women/44.jpg",
     description: (
       <p>
-        The documentation on inter-process communication in CNdocs is exceptional. I reference it regularly in my work. The message queue examples were particularly helpful for a recent project.
+        The documentation on inter-process communication in CNdocs is
+        exceptional. I reference it regularly in my work. The message queue
+        examples were particularly helpful for a recent project.
       </p>
     ),
   },
@@ -110,7 +120,9 @@ const testimonials = [
     img: "https://randomuser.me/api/portraits/men/55.jpg",
     description: (
       <p>
-        CNdocs&apos; explanations of network security principles are outstanding. I appreciate how the documentation connects theoretical concepts with practical implementation details. A must-read resource.
+        CNdocs&apos; explanations of network security principles are
+        outstanding. I appreciate how the documentation connects theoretical
+        concepts with practical implementation details. A must-read resource.
       </p>
     ),
   },
@@ -120,7 +132,9 @@ const testimonials = [
     img: "https://randomuser.me/api/portraits/women/67.jpg",
     description: (
       <p>
-        The socket programming tutorials on CNdocs helped me implement real-time features in my web applications. The step-by-step guides and code examples made it easy to follow along and adapt to my needs.
+        The socket programming tutorials on CNdocs helped me implement real-time
+        features in my web applications. The step-by-step guides and code
+        examples made it easy to follow along and adapt to my needs.
       </p>
     ),
   },
@@ -130,7 +144,9 @@ const testimonials = [
     img: "https://randomuser.me/api/portraits/men/78.jpg",
     description: (
       <p>
-        CNdocs has become my go-to reference for troubleshooting network issues. The clear explanations of protocols and network architecture have helped me resolve complex problems quickly and efficiently.
+        CNdocs has become my go-to reference for troubleshooting network issues.
+        The clear explanations of protocols and network architecture have helped
+        me resolve complex problems quickly and efficiently.
       </p>
     ),
   },
@@ -140,7 +156,9 @@ const testimonials = [
     img: "https://randomuser.me/api/portraits/women/89.jpg",
     description: (
       <p>
-        Working with IoT devices requires solid networking knowledge, and CNdocs delivers exactly what I need. The documentation on low-level protocols and efficient communication patterns has been invaluable.
+        Working with IoT devices requires solid networking knowledge, and CNdocs
+        delivers exactly what I need. The documentation on low-level protocols
+        and efficient communication patterns has been invaluable.
       </p>
     ),
   },
@@ -150,7 +168,9 @@ const testimonials = [
     img: "https://randomuser.me/api/portraits/men/92.jpg",
     description: (
       <p>
-        CNdocs provides an excellent foundation for understanding network vulnerabilities. The clear explanations of how protocols work have helped me develop more effective security testing methodologies.
+        CNdocs provides an excellent foundation for understanding network
+        vulnerabilities. The clear explanations of how protocols work have
+        helped me develop more effective security testing methodologies.
       </p>
     ),
   },
@@ -160,7 +180,9 @@ const testimonials = [
     img: "https://randomuser.me/api/portraits/women/29.jpg",
     description: (
       <p>
-        As someone new to networking, CNdocs has been an incredible learning resource. The progression from basic concepts to advanced topics is well-structured, and the visual aids really help with understanding.
+        As someone new to networking, CNdocs has been an incredible learning
+        resource. The progression from basic concepts to advanced topics is
+        well-structured, and the visual aids really help with understanding.
       </p>
     ),
   },
@@ -168,7 +190,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="container overflow-x-hidden relative py-10 overflow-x-hidden">
+    <section className=" overflow-x-hidden relative py-10">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -186,7 +208,7 @@ export default function Testimonials() {
           <span className="font-semibold text-primary">Cndocs</span>
         </h3>
       </motion.div>
- 
+
       <div className="relative mt-6 max-h-screen max-w-7xl mx-auto overflow-hidden rounded-xl">
         <div className="gap-4 md:columns-2 xl:columns-3">
           {Array(Math.ceil(testimonials.length / 3))
