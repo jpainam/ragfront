@@ -2,7 +2,8 @@ import ContactUs1 from "@/components/contact-us-1";
 import Footer4Col from "@/components/footer";
 import GradientBlur from "@/components/GradientBlur";
 import { NavbarDemo } from "@/components/navbar";
-
+import { Globe, Mail, Phone } from "lucide-react";
+import Link from "next/link";
 export default function Page() {
   return (
     <>
@@ -15,10 +16,7 @@ export default function Page() {
   );
 }
 
-import { Globe, Mail, Phone } from "lucide-react";
-import Link from "next/link";
-
-export function CTA1() {
+function CTA1() {
   return (
     <div className="w-full">
       <section className="mx-auto max-w-7xl px-4 py-6 lg:px-8 lg:py-20">
