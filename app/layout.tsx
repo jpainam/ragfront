@@ -1,8 +1,12 @@
+import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
 
+const META_THEME_COLORS = {
+  light: "#ffffff",
+  dark: "#09090b",
+};
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -15,7 +19,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "CN Docs - Comprehensive Networking Documentation",
-  description: "A beautiful documentation site for computer networking and socket programming with clear explanations and practical examples.",
+  description:
+    "A beautiful documentation site for computer networking and socket programming with clear explanations and practical examples.",
   keywords: [
     "computer networking",
     "socket programming",
@@ -23,7 +28,7 @@ export const metadata: Metadata = {
     "OSI model",
     "networking documentation",
     "network protocols",
-    "socket examples"
+    "socket examples",
   ],
   metadataBase: new URL("https://cn.mvp-subha.me"),
   openGraph: {
@@ -59,17 +64,37 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta name="google" content="notranslate" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                if (localStorage.theme === 'dark' || ((!('theme' in localStorage) || localStorage.theme === 'system') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                  document.querySelector('meta[name="theme-color"]').setAttribute('content', '${META_THEME_COLORS.dark}')
+                }
+              } catch (_) {}
+            `,
+          }}
+        />
+        {/* <script
+            src="https://unpkg.com/react-scan/dist/auto.global.js"
+            async
+          ></script> */}
+      </head>
       <body
         className={`overflow-x-hidden ${geistSans.variable} ${geistMono.variable} antialiased`}
-      ><ThemeProvider
+      >
+        <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
+          enableColorScheme
         >
           {children}
-          </ThemeProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

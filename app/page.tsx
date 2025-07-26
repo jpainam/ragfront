@@ -40,7 +40,7 @@ export default function Home() {
 
       <main className="container mx-auto relative max-w-[1100px] px-2 py-4 lg:py-8 mt-20 min-h-screen sm:min-h-1">
         <div className="relative">
-          <div className="relative flex flex-col border border-green-500/10 bg-fd-background/70 backdrop-blur-md px-4 pt-12 max-md:text-center md:px-12 md:pt-16 rounded-xl shadow-xl shadow-green-500/5 items-start justify-start">
+          <div className="relative flex flex-col border border-green-500/10 bg-fd-background/70 backdrop-blur-md px-4 pt-12 max-md:text-center md:px-12 md:pt-16 rounded-xl shadow-xl shadow-green-500/5 items-center justify-center">
             <div
               className="absolute inset-0 z-0 top-1/5 blur-2xl hidden dark:block"
               style={{
