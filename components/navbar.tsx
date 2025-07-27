@@ -18,10 +18,10 @@ import { ModeToggle } from "./ui/mode-toggle";
 
 export function NavbarDemo() {
   const navItems = [
-    {
-      name: "Services",
-      link: "/services",
-    },
+    // {
+    //   name: "Services",
+    //   link: "/services",
+    // },
     {
       name: "Features",
       link: "/#features",
