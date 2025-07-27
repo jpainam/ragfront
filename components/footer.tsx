@@ -1,15 +1,13 @@
 import {
-  Github,
-  Mail,
-  MapPin,
-  Phone,
-  Twitter,
-  Linkedin,
   BookOpen,
   Code,
-  Network,
+  Github,
+  LibraryBigIcon,
+  Linkedin,
+  Mail,
+  MapPin,
   Shield,
-  Server,
+  Twitter,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -73,16 +71,17 @@ export default function Footer4Col() {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <div className="flex gap-2 text-primary justify-start">
-              <img src="/logo.webp" alt="Cndocs Logo" className="size-8" />
+              {/* <img src="/logo.webp" alt="Cndocs Logo" className="size-8" /> */}
+              <LibraryBigIcon className="size-8 text-emerald-200" />
               <span className="bg-primary from-foreground via-green-200 to-primary bg-clip-text text-2xl font-semibold text-transparent dark:bg-gradient-to-b">
-                Cndocs
+                docentra.ai
               </span>
             </div>
 
             <p className="mt-6 max-w-md leading-relaxed text-foreground/50 sm:max-w-xs sm:text-left">
-              Comprehensive documentation for computer networking and socket
-              programming. Learn, build, and master networking concepts with
-              practical examples.
+              Transform your internal knowledge into an AI-powered assistant
+              that delivers instant, accurate answers with full context and
+              reliable sources.
             </p>
 
             <ul className="mt-8 flex gap-6 justify-start md:gap-8">
@@ -192,7 +191,7 @@ export default function Footer4Col() {
             </p>
 
             <p className="text-secondary-foreground/70 text-sm transition sm:order-first sm:mt-0">
-              &copy; {new Date().getFullYear()} Docentra Ai
+              &copy; {new Date().getFullYear()} docentra.ai
             </p>
           </div>
         </div>

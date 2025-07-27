@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { Menu, X } from "lucide-react";
+import { LibraryBigIcon, Menu, X } from "lucide-react";
 import {
   AnimatePresence,
   motion,
@@ -244,9 +244,10 @@ export const MobileNavToggle = ({
 export const NavbarLogo = () => {
   return (
     <Link href="/" className="z-50 flex items-center justify-center gap-2">
-      <img src="/logo.webp" alt="logo" className="h-8 w-8 rounded-full" />
+      {/* <img src="/logo.webp" alt="logo" className="h-8 w-8 rounded-full" /> */}
+      <LibraryBigIcon className="w-8 h-8 rounded-full text-emerald-200" />
       <span className="bg-primary from-foreground via-emerald-200 to-primary bg-clip-text text-2xl font-semibold text-transparent dark:bg-gradient-to-b md:text-xl">
-        Docentra Ai
+        docentra.ai
       </span>
     </Link>
   );

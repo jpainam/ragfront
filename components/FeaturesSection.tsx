@@ -22,7 +22,7 @@ export default function FeaturesSection() {
   return (
     <section
       id={"features"}
-      className="relative overflow-x-hidden px-4 sm:mt-16 pt-0 pb-16 sm:pt-16 md:py-32"
+      className="relative overflow-x-hidden px-4 sm:mt-16 pt-0 pb-16 sm:pt-16 md:pt-32"
     >
       {/* Background gradient blurs */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-gradient-to-br from-green-500/20 via-emerald-500/10 to-transparent rounded-full blur-[100px] opacity-50 -z-10" />

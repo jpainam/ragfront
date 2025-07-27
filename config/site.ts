@@ -2,7 +2,7 @@ export const siteLink =
   process.env.NODE_ENV !== "development"
     ? "https://cn.mvp-subha.me"
     : "http://localhost:3000";
-export const siteName = "Docentra Ai";
+export const siteName = "docentra.ai";
 export const launched = true;
 export const siteConfig = {
   name: "CN Docs",

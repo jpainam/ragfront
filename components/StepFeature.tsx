@@ -53,7 +53,7 @@ export default function FeatureSteps() {
   }, [progress]);
 
   return (
-    <div className={"p-8 md:p-12"}>
+    <div className={"p-8"}>
       <div className="mx-auto w-full max-w-6xl">
         <div className="relative mx-auto mb-12 max-w-2xl sm:text-center">
           <div className="relative z-10">

@@ -32,11 +32,11 @@ export const metadata: Metadata = {
   ],
   metadataBase: new URL("https://cn.mvp-subha.me"),
   openGraph: {
-    title: "Docentra Ai",
+    title: "cocentra.ai",
     description:
       "A beautiful documentation site for computer networking and socket programming with clear explanations and practical examples.",
     url: "https://cn.mvp-subha.me",
-    siteName: "Docentra Ai",
+    siteName: "docentra.ai",
     images: [
       {
         url: "https://i.postimg.cc/rw0PX56X/Screenshot-2025-05-19-000837.png",
