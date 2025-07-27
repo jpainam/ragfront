@@ -7,7 +7,7 @@ import Testimonials from "@/components/testimonials-marquee";
 import { buttonVariants } from "@/components/ui/button";
 import { SparklesText } from "@/components/ui/sparkles-text";
 import { cn } from "@/lib/utils";
-import { ArrowRight, Github } from "lucide-react";
+import { ArrowRight, LogInIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -92,7 +92,7 @@ export default function Page() {
                     d="M5 13l4 4L19 7"
                   ></path>
                 </svg>
-                <span>Socket Programming</span>
+                <span>Internal Knowledge</span>
               </div>
               <div className="flex items-center gap-2">
                 <svg
@@ -109,7 +109,7 @@ export default function Page() {
                     d="M5 13l4 4L19 7"
                   ></path>
                 </svg>
-                <span>TCP/IP Model</span>
+                <span>AI Assistant</span>
               </div>
               <div className="flex items-center gap-2">
                 <svg
@@ -126,7 +126,7 @@ export default function Page() {
                     d="M5 13l4 4L19 7"
                   ></path>
                 </svg>
-                <span>Client-Server Architecture</span>
+                <span>Enterprise Productivity</span>
               </div>
               <div className="flex items-center gap-2">
                 <svg
@@ -143,7 +143,7 @@ export default function Page() {
                     d="M5 13l4 4L19 7"
                   ></path>
                 </svg>
-                <span>Advanced Codes</span>
+                <span>Document Intelligence</span>
               </div>
             </div>
 
@@ -172,7 +172,7 @@ export default function Page() {
                   })
                 )}
               >
-                Github <Github className="size-4" />
+                Sign Up <LogInIcon className="size-4" />
               </a>
             </div>
 
@@ -201,7 +201,7 @@ export default function Page() {
                       clipRule="evenodd"
                     ></path>
                   </svg>
-                  <span className="font-medium">Practical Examples</span>
+                  <span className="font-medium">AI Assistant</span>
                 </div>
               </div>
             </div>
