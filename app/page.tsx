@@ -4,11 +4,12 @@ import Footer4Col from "@/components/footer";
 import GradientBlur from "@/components/GradientBlur";
 import { NavbarDemo } from "@/components/navbar";
 import SimplePricing from "@/components/Pricing";
+import FeatureSteps from "@/components/StepFeature";
 import Testimonials from "@/components/testimonials-marquee";
 import { buttonVariants } from "@/components/ui/button";
 import { SparklesText } from "@/components/ui/sparkles-text";
 import { cn } from "@/lib/utils";
-import { ArrowRight, LogInIcon } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -73,9 +74,9 @@ export default function Page() {
               with AI
             </h1>
             <p className="mb-8 text-left md:text-center text-muted-foreground md:max-w-[80%] md:text-xl">
-              Turn your files into an AI-powered assistant with answers sourced
-              directly from your internal documentation, policies, and knowledge
-              base. From static documents to actionable knowledge.
+              Your AI-powered assistant with answers sourced directly from your
+              internal documentation, policies, and knowledge base. From static
+              documents to actionable knowledge.
             </p>
             <div className="flex flex-wrap gap-4 mb-6 md:flex-row">
               <div className="flex items-center gap-2">
@@ -159,7 +160,8 @@ export default function Page() {
                   })
                 )}
               >
-                Getting Started <ArrowRight className="size-4" />
+                {/* Getting Started <ArrowRight className="size-4" /> */}
+                Getting Started
               </Link>
               <a
                 href="https://github.com/subhadeeproy3902/cndocs"
@@ -173,7 +175,7 @@ export default function Page() {
                   })
                 )}
               >
-                Sign Up <LogInIcon className="size-4" />
+                Try the demo <ArrowRight className="size-4" />
               </a>
             </div>
 
@@ -210,6 +212,7 @@ export default function Page() {
         </div>
       </main>
       <FeaturesSection />
+      <FeatureSteps />
       <Testimonials />
       <SimplePricing />
       <Faq2 />
