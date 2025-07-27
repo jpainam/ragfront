@@ -7,11 +7,11 @@ import Testimonials from "@/components/testimonials-marquee";
 import { buttonVariants } from "@/components/ui/button";
 import { SparklesText } from "@/components/ui/sparkles-text";
 import { cn } from "@/lib/utils";
-import { ArrowRight, LogInIcon } from "lucide-react";
+import { ArrowRight, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Home() {
+export default function Page() {
   return (
     <>
       <NavbarDemo />
@@ -38,9 +38,9 @@ export default function Home() {
         }}
       ></div>
 
-      <main className="container mx-auto relative max-w-[1100px] px-2 py-4 lg:py-8 mt-20 min-h-screen sm:min-h-1">
+      <main className="container relative max-w-[1100px] px-2 py-4 lg:py-8 mt-20 min-h-screen sm:min-h-1">
         <div className="relative">
-          <div className="relative flex flex-col border border-green-500/10 bg-fd-background/70 backdrop-blur-md px-4 pt-12 max-md:text-center md:px-12 md:pt-16 rounded-xl shadow-xl shadow-green-500/5 items-center justify-center">
+          <div className="relative flex flex-col border border-green-500/10 bg-fd-background/70 backdrop-blur-md px-4 pt-12 max-md:text-center md:px-12 md:pt-16 rounded-xl shadow-xl shadow-green-500/5 items-start justify-start md:items-center md:justify-center">
             <div
               className="absolute inset-0 z-0 top-1/5 blur-2xl hidden dark:block"
               style={{
@@ -51,7 +51,7 @@ export default function Home() {
               }}
             />
             <div
-              className="absolute text-left inset-0 z-0 top-1/5 blur-2xl dark:hidden"
+              className="absolute text-left md:text-center inset-0 z-0 top-1/5 blur-2xl dark:hidden"
               style={{
                 maskImage:
                   "linear-gradient(to bottom, transparent, white, transparent)",
@@ -67,11 +67,11 @@ export default function Home() {
                   second: "#5aedda",
                 }}
               >
-                Your Internal docs
+                Your Internal Docs
               </SparklesText>{" "}
               with AI
             </h1>
-            <p className="mb-8 text-center text-muted-foreground md:max-w-[80%] md:text-xl">
+            <p className="mb-8 text-left md:text-center text-muted-foreground md:max-w-[80%] md:text-xl">
               Turn your files into an AI-powered assistant with answers sourced
               directly from your internal documentation, policies, and knowledge
               base. From static documents to actionable knowledge.
@@ -92,7 +92,7 @@ export default function Home() {
                     d="M5 13l4 4L19 7"
                   ></path>
                 </svg>
-                <span>Internal Knowledge</span>
+                <span>Socket Programming</span>
               </div>
               <div className="flex items-center gap-2">
                 <svg
@@ -109,7 +109,7 @@ export default function Home() {
                     d="M5 13l4 4L19 7"
                   ></path>
                 </svg>
-                <span>AI Assistant</span>
+                <span>TCP/IP Model</span>
               </div>
               <div className="flex items-center gap-2">
                 <svg
@@ -126,7 +126,7 @@ export default function Home() {
                     d="M5 13l4 4L19 7"
                   ></path>
                 </svg>
-                <span>Enterprise Productivity</span>
+                <span>Client-Server Architecture</span>
               </div>
               <div className="flex items-center gap-2">
                 <svg
@@ -143,7 +143,7 @@ export default function Home() {
                     d="M5 13l4 4L19 7"
                   ></path>
                 </svg>
-                <span>Document Intelligence</span>
+                <span>Advanced Codes</span>
               </div>
             </div>
 
@@ -161,7 +161,7 @@ export default function Home() {
                 Getting Started <ArrowRight className="size-4" />
               </Link>
               <a
-                href="https://github.com/jpainam/ragfront"
+                href="https://github.com/subhadeeproy3902/cndocs"
                 target="_blank"
                 rel="noreferrer noopener"
                 className={cn(
@@ -172,7 +172,7 @@ export default function Home() {
                   })
                 )}
               >
-                Sign Up <LogInIcon className="size-4" />
+                Github <Github className="size-4" />
               </a>
             </div>
 
@@ -201,7 +201,7 @@ export default function Home() {
                       clipRule="evenodd"
                     ></path>
                   </svg>
-                  <span className="font-medium">Internal Ai Assistant</span>
+                  <span className="font-medium">Practical Examples</span>
                 </div>
               </div>
             </div>
