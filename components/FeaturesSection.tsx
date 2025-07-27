@@ -10,10 +10,11 @@ import DottedMap from "dotted-map";
 import {
   Code,
   Database,
+  FileTextIcon,
+  LibraryBigIcon,
   MessageCircle,
   Network,
   Server,
-  Shield,
   Wifi,
 } from "lucide-react";
 import { Area, AreaChart, CartesianGrid } from "recharts";
@@ -76,26 +77,26 @@ export default function FeaturesSection() {
             <span className="text-muted-foreground flex items-center gap-2">
               <MessageCircle className="size-4 text-primary" />
               <span className="font-medium text-primary">
-                Socket Programming Support
+                Natural Language Search
               </span>
             </span>
 
             <p className="my-8 text-2xl font-semibold">
-              Get expert guidance on client-server implementations and
-              protocols.
+              Ask your assistant questions like you would a colleague.
             </p>
           </div>
           <div aria-hidden className="flex flex-col gap-8">
             <div>
               <div className="flex items-center gap-2">
-                <img src="/logo.webp" alt="Cndocs Logo" className="size-6" />
+                {/* <img src="/logo.webp" alt="Cndocs Logo" className="size-6" /> */}
+                <LibraryBigIcon className="size-6" />
                 <span className="text-muted-foreground text-xs">Today</span>
               </div>
               <div className="rounded-(--radius) bg-background mt-1.5 w-3/5 border border-primary/10 p-3 text-xs font-mono transition-all group-hover:border-primary/30">
                 <span className="text-zinc-500 dark:text-zinc-400">
                   Question
                 </span>
-                <div>How do I implement a TCP server in C?</div>
+                <div>What are the requirements for PTO?</div>
               </div>
             </div>
 
@@ -117,22 +118,25 @@ export default function FeaturesSection() {
         <div className="col-span-full border-t grid md:grid-cols-2">
           <div className="group transition-all p-6 sm:p-12 border-b md:border-b-0 md:border-r">
             <span className="text-muted-foreground flex items-center gap-2">
-              <Shield className="size-4 text-primary" />
-              <span className="font-medium text-primary">Network Security</span>
+              <FileTextIcon className="size-4 text-primary" />
+              <span className="font-medium text-primary">
+                Source-Aware Answers
+              </span>
             </span>
 
             <p className="my-8 text-2xl font-semibold">
-              Learn essential security protocols and encryption techniques.
+              Combine document search and model reasoning.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mt-8">
               <div className="rounded-lg border p-4 transition-all hover:border-primary/50 hover:shadow-sm">
                 <div className="size-10 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center mb-3">
-                  <span className="text-lg">🔒</span>
+                  <span className="text-lg">📑</span>
                 </div>
-                <h4 className="font-medium mb-1">SSL/TLS</h4>
+                <h4 className="font-medium mb-1">Multi-format Support</h4>
                 <p className="text-xs text-muted-foreground">
-                  Secure communication protocols for data encryption
+                  Upload PDFs, Word files, HTML pages, or plain text - we handle
+                  the rest.
                 </p>
               </div>
               <div className="rounded-lg border p-4 transition-all hover:border-primary/50 hover:shadow-sm">
