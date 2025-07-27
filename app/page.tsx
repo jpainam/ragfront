@@ -1,6 +1,5 @@
-import { CompanyList } from "@/components/CompanyList";
 import Faq2 from "@/components/faq-2";
-import FeaturesSection from "@/components/Features";
+import FeaturesSection from "@/components/FeaturesSection";
 //import FeaturesSection from "@/components/Features";
 import Footer4Col from "@/components/footer";
 import GradientBlur from "@/components/GradientBlur";
@@ -220,7 +219,7 @@ export default function Page() {
       {/* <Testimonials /> */}
       <SimplePricing />
       <Faq2 />
-      <CompanyList />
+      {/* <CompanyList /> */}
       <Footer4Col />
     </>
   );
