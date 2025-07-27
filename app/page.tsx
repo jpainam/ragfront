@@ -3,6 +3,7 @@ import FeaturesSection from "@/components/Features";
 import Footer4Col from "@/components/footer";
 import GradientBlur from "@/components/GradientBlur";
 import { NavbarDemo } from "@/components/navbar";
+import SimplePricing from "@/components/Pricing";
 import Testimonials from "@/components/testimonials-marquee";
 import { buttonVariants } from "@/components/ui/button";
 import { SparklesText } from "@/components/ui/sparkles-text";
@@ -210,6 +211,7 @@ export default function Page() {
       </main>
       <FeaturesSection />
       <Testimonials />
+      <SimplePricing />
       <Faq2 />
       <Footer4Col />
     </>
