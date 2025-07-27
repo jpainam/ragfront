@@ -54,7 +54,7 @@ export default function FeatureSteps() {
 
   return (
     <div className={"p-8 md:p-12"}>
-      <div className="mx-auto w-full max-w-7xl">
+      <div className="mx-auto w-full max-w-6xl">
         <div className="relative mx-auto mb-12 max-w-2xl sm:text-center">
           <div className="relative z-10">
             <h2 className="font-geist text-3xl font-bold tracking-tighter md:text-4xl lg:text-5xl">
@@ -66,10 +66,10 @@ export default function FeatureSteps() {
           </div>
           <div
             className="absolute inset-0 mx-auto h-44 max-w-xs blur-[118px]"
-            style={{
-              background:
-                "linear-gradient(152.92deg, rgba(192, 15, 102, 0.2) 4.54%, rgba(192, 11, 109, 0.26) 34.2%, rgba(192, 15, 102, 0.1) 77.55%)",
-            }}
+            // style={{
+            //   background:
+            //     "linear-gradient(152.92deg, rgba(192, 15, 102, 0.2) 4.54%, rgba(192, 11, 109, 0.26) 34.2%, rgba(192, 15, 102, 0.1) 77.55%)",
+            // }}
           ></div>
         </div>
         <hr className="bg-foreground/30 mx-auto mb-10 h-px w-1/2" />

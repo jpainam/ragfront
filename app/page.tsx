@@ -1,11 +1,13 @@
+import { CompanyList } from "@/components/CompanyList";
 import Faq2 from "@/components/faq-2";
 import FeaturesSection from "@/components/Features";
+//import FeaturesSection from "@/components/Features";
 import Footer4Col from "@/components/footer";
 import GradientBlur from "@/components/GradientBlur";
 import { NavbarDemo } from "@/components/navbar";
 import SimplePricing from "@/components/Pricing";
 import FeatureSteps from "@/components/StepFeature";
-import Testimonials from "@/components/testimonials-marquee";
+//import Testimonials from "@/components/testimonials-marquee";
 import { buttonVariants } from "@/components/ui/button";
 import { SparklesText } from "@/components/ui/sparkles-text";
 import { cn } from "@/lib/utils";
@@ -211,11 +213,14 @@ export default function Page() {
           </div>
         </div>
       </main>
+      {/* <CompanyList /> */}
+
       <FeaturesSection />
       <FeatureSteps />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <SimplePricing />
       <Faq2 />
+      <CompanyList />
       <Footer4Col />
     </>
   );

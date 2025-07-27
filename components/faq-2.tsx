@@ -14,27 +14,27 @@ interface FaqItem {
 }
 
 const faqItems: FaqItem[] = [
-  {
-    id: "1",
-    question: "What is this platform for?",
-    answer:
-      "It transforms your internal documents into an intelligent assistant that answers natural language questions with sourced responses.",
-    category: "general",
-  },
-  {
-    id: "2",
-    question: "Who should use it?",
-    answer:
-      "Anyone who manages internal knowledge — HR teams, legal firms, educators, startup founders, ops teams, product managers, or solo professionals.",
-    category: "general",
-  },
-  {
-    id: "3",
-    question: "Is it difficult to use?",
-    answer:
-      "Not at all. You simply upload your documents and click “Build”. You can begin querying immediately, no technical setup needed.",
-    category: "general",
-  },
+  // {
+  //   id: "1",
+  //   question: "What is this platform for?",
+  //   answer:
+  //     "It transforms your internal documents into an intelligent assistant that answers natural language questions with sourced responses.",
+  //   category: "general",
+  // },
+  // {
+  //   id: "2",
+  //   question: "Who should use it?",
+  //   answer:
+  //     "Anyone who manages internal knowledge — HR teams, legal firms, educators, startup founders, ops teams, product managers, or solo professionals.",
+  //   category: "general",
+  // },
+  // {
+  //   id: "3",
+  //   question: "Is it difficult to use?",
+  //   answer:
+  //     "Not at all. You simply upload your documents and click “Build”. You can begin querying immediately, no technical setup needed.",
+  //   category: "general",
+  // },
   {
     id: "4",
     question: "What file types are supported?",
@@ -63,13 +63,13 @@ const faqItems: FaqItem[] = [
       "It uses vector search over your uploaded content, finds the most relevant sections, and appends them to your prompt before querying the model.",
     category: "technical",
   },
-  {
-    id: "8",
-    question: "Is there a free version?",
-    answer:
-      "Yes — the Starter plan is free and great for solo users or hobby projects.",
-    category: "pricing",
-  },
+  // {
+  //   id: "8",
+  //   question: "Is there a free version?",
+  //   answer:
+  //     "Yes — the Starter plan is free and great for solo users or hobby projects.",
+  //   category: "pricing",
+  // },
   {
     id: "9",
     question: "How does billing work?",
