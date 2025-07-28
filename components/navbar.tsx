@@ -45,7 +45,7 @@ export function NavbarDemo() {
         <NavItems items={navItems} />
         <div className="flex items-center gap-4">
           <NavbarButton variant="gradient">
-            <Link href="https://dashboard.ragfront.ai/signin">Sign In</Link>
+            <Link href="https://ragdashboard-web.vercel.app">Sign In</Link>
           </NavbarButton>
           <ModeToggle />
         </div>
